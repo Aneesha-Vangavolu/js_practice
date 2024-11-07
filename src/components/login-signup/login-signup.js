@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 import './login-signup.css';
 import { UserdataContext } from '/Users/abhisha/Desktop/study/react/wheather-project/src/App.js';
+import { useNavigate } from 'react-router-dom';
 
 function Loginsignup(){
     const {userdata, setUserdata } = useContext(UserdataContext);
+    const navigate=useNavigate()
 
 
     let [isSignup,setSignup]=useState(true);// switch login to signup
@@ -61,6 +63,7 @@ function Loginsignup(){
                     alert(`Login successful! ${storedUser.fullName}!`);
                     console.log(storedUser.fullName)
                     setUserdata(storedUser);
+                    navigate('/cards')
                 } else {
                     alert('Invalid email or password.');
                 }
