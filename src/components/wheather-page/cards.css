@@ -1,0 +1,158 @@
+/* Base Styles (for larger screens) */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+  padding: 20px 30px;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.248);
+  width: 20%;
+  height: 80%;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 10px 30px;
+  padding: 15px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.city {
+  display: flex;
+  flex-direction: row;  
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.285);
+  margin: 12px 10px;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city_image img {
+  padding: 3px;
+  width: 30px;
+  align-items: center;
+
+}
+
+.city_name {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 5px;
+  margin:auto;
+  justify-content: flex-start;
+  margin-left: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.897);
+}
+
+.temp {
+  font-size: 20px;
+  color: rgb(233, 227, 227);
+  font-weight: bold;
+  padding: 5px;
+  margin: auto 5px;
+  text-align:center;
+  
+}
+.gragh_button {
+  margin-left: auto;  /* Space between the text and button */
+  height: 30px;       /* Set a fixed height for uniformity */
+  padding: 5px 10px;  /* Add padding for a better look */
+  display: flex;      /* Center text within the button */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional background color */
+  border: none;      /* Remove default border */
+  border-radius: 5px; /* Optional border radius */
+  cursor: pointer;    /* Change cursor to pointer on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (mobile - less than 600px) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduce gap between cards */
+    padding: 10px 15px; /* Less padding for mobile */
+    height: auto; /* Let height adjust to content */
+  }
+
+  .card {
+    width: 90%; /* Card takes most of the screen width */
+    height: auto; /* Let height adjust to content */
+    font-size: 16px; /* Slightly smaller font for mobile */
+    padding: 12px; /* Adjust padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow for mobile */
+  }
+
+  .city {
+    padding: 5px; /* Slightly more padding for smaller devices */
+    margin: 10px 0; /* Less margin for tighter spacing */
+  }
+
+  .city_image img {
+    width: 20px; /* Smaller image size */
+  }
+
+  .city_name {
+    font-size: 14px; /* Slightly smaller text for mobile */
+  }
+
+  .temp {
+    font-size: 20px; /* Smaller temperature font size */
+  }
+}
+
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    gap: 50px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .card {
+    width: 30%;
+    height: auto;
+    font-size: 17px;
+    padding: 12px;
+  }
+
+  .city_image img {
+    width: 22px;
+  }
+
+  .city_name {
+    font-size: 16px;
+  }
+
+  .temp {
+    font-size: 24px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .container {
+    gap: 125px;
+  }
+
+  .card {
+    width: 20%;
+  }
+
+  .city_name {
+    font-size: 17px;
+  }
+
+  .temp {
+    font-size: 25px;
+  }
+}

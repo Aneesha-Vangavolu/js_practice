@@ -1,0 +1,21 @@
+.settings_icon {
+    position: relative; /* Required for positioning the dropdown */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+.dropdown_menu {
+    position: absolute; /* Position it relative to settings_icon */
+    background-color: rgb(255, 255, 255); /* Dropdown background */
+    border: 1px solid #ccc; /* Optional border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Optional shadow */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropdown_option {
+    padding: 8px 12px; /* Spacing inside options */
+    cursor: pointer; /* Pointer cursor for options */
+}
+
+.dropdown_option:hover {
+    background-color: #b4aeaeb9; /* Highlight on hover */
+}

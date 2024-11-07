@@ -1,0 +1,94 @@
+.Container{
+display:flex;
+flex-direction: column;
+margin:auto;
+margin-top: 150px;
+width:500px;
+box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.838);
+background: rgba(255, 255, 255, 0.718);
+padding-bottom: 40px;
+padding-top: 20px;
+}
+.Header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    margin-top: 20px;
+    width:100%;
+}
+.Text{
+    color:#370861;   
+    font-size:30px;
+    font-weight: 800; /* bold */
+
+}
+.Underline{
+    width:130px;
+    height: 6px;
+    background-color: #370861;
+    border-radius: 9px;
+}
+.Input-box{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+
+}
+.input{
+    display:flex;
+    align-items: center;
+    margin:auto;
+    width:400px;
+    height:50px;
+    background:#ebe7e789;
+    border-radius: 100px;
+}
+.input-icon{
+    margin:0px 20px;
+
+}
+.Input-box input{
+    height:50px;
+    width: 400px;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#28094c89 ;
+    font-size: 20px;
+}
+.Forget-password{
+    margin:auto;
+    margin-top:10px;
+    font-size: 15px;
+    color:#28094c89;
+}
+.Forget-password{
+    cursor: pointer;
+    color: #28094c89;
+}
+.Submit-container{
+    margin:auto;
+    display:flex;
+    gap:30px;
+    margin:60px,auto;
+
+}
+.Submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:50px;
+    color:#ffffff;
+    background-color: #490886;
+    border-radius: 90px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.Submit:hover{
+    background-color: #d3b3ef;
+}

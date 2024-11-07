@@ -1,0 +1,50 @@
+.Nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between Home and Nav-content */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 0px 10px; /* Adds padding around the navbar */
+    background-color: transparent;
+   
+}
+
+.Home {
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 20px; /* Font size for the Home link */
+    color: rgba(255, 255, 255, 0.926); /* Text color */
+    font-weight: 700; /* Bold text for the Home link */
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.Home:hover {
+    color: #caa0ee; /* Changes color on hover */
+}
+
+.Nav-content {
+    display: flex;
+    align-items: center; /* Aligns Username and icon vertically */
+}
+
+.Nav-content p {
+    margin-right: 10px; /* Adds space between the username and the icon */
+    font-size: 20px; /* Font size for the username */
+    color: rgba(255, 255, 255, 0.926); /* Text color */
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+}
+
+.Nav-icon {
+    font-size: 20px; /* Size of the icon */
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    position: relative;
+    color: rgba(255, 255, 255, 0.925);;
+    
+}
+
+.Nav-icon:hover {
+   background-color: #d3b3ef; /* Changes icon color on hover */
+   padding: 5px 5px;
+    
+}
