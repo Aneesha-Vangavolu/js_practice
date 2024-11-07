@@ -3,6 +3,7 @@ import { faUser, faHouse } from '@fortawesome/free-solid-svg-icons';
 import './Nav.css';
 import { UserdataContext } from '/Users/abhisha/Desktop/study/react/wheather-project/src/App.js';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const {userdata} = useContext(UserdataContext); // Accessing userdata from context
@@ -10,9 +11,9 @@ function Nav() {
     return (
         
         <div className='Nav'>
-            <a href='/' className='Home'>
+            <Link to='/' className='Home'>
                 <FontAwesomeIcon icon={faHouse} />
-            </a>
+            </Link>
             <div className='Nav-content'>
                 <p>{userdata.fullName ? `Welcome ${userdata.fullName} !` : 'Guest'}</p> 
                 <FontAwesomeIcon className='Nav-icon' icon={faUser} />
